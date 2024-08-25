@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B673E87-E802-4C3A-8FD7-8B98EFFC37D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CARwashManagementSystem</RootNamespace>
+    <AssemblyName>CARwashManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bakshishe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bakshishe.Designer.cs">
+      <DependentUpon>Bakshishe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BakshisheShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BakshisheShow.Designer.cs">
+      <DependentUpon>BakshisheShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateProfile.Designer.cs">
+      <DependentUpon>CreateProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard2.Designer.cs">
+      <DependentUpon>Dashboard2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardClass.cs" />
+    <Compile Include="DbConnections.cs" />
+    <Compile Include="Harxhimet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Harxhimet.Designer.cs">
+      <DependentUpon>Harxhimet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HarxhimetModuke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HarxhimetModuke.Designer.cs">
+      <DependentUpon>HarxhimetModuke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klientet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Klientet.Designer.cs">
+      <DependentUpon>Klientet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KlientetModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KlientetModule.Designer.cs">
+      <DependentUpon>KlientetModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produkte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produkte.Designer.cs">
+      <DependentUpon>Produkte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProduktetModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProduktetModule.Designer.cs">
+      <DependentUpon>ProduktetModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Programet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programet.Designer.cs">
+      <DependentUpon>Programet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgrametShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgrametShow.Designer.cs">
+      <DependentUpon>ProgrametShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Promo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Promo.Designer.cs">
+      <DependentUpon>Promo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PromoShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PromoShow.Designer.cs">
+      <DependentUpon>PromoShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Puntoret.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puntoret.Designer.cs">
+      <DependentUpon>Puntoret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PuntoretModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuntoretModule.Designer.cs">
+      <DependentUpon>PuntoretModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SherbimetModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SherbimetModule.Designer.cs">
+      <DependentUpon>SherbimetModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentesAbonements .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentesAbonements .Designer.cs">
+      <DependentUpon>VentesAbonements .cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentesAbonementsX30Show.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentesAbonementsX30Show.Designer.cs">
+      <DependentUpon>VentesAbonementsX30Show.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentesAbonementX30.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentesAbonementX30.Designer.cs">
+      <DependentUpon>VentesAbonementX30.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentesAbonShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentesAbonShow.Designer.cs">
+      <DependentUpon>VentesAbonShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentureInterieus .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentureInterieus .Designer.cs">
+      <DependentUpon>VentureInterieus .cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentureIShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentureIShow.Designer.cs">
+      <DependentUpon>VentureIShow.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bakshishe.resx">
+      <DependentUpon>Bakshishe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BakshisheShow.resx">
+      <DependentUpon>BakshisheShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateProfile.resx">
+      <DependentUpon>CreateProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard2.resx">
+      <DependentUpon>Dashboard2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Harxhimet.resx">
+      <DependentUpon>Harxhimet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HarxhimetModuke.resx">
+      <DependentUpon>HarxhimetModuke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Klientet.resx">
+      <DependentUpon>Klientet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KlientetModule.resx">
+      <DependentUpon>KlientetModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produkte.resx">
+      <DependentUpon>Produkte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProduktetModule.resx">
+      <DependentUpon>ProduktetModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programet.resx">
+      <DependentUpon>Programet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgrametShow.resx">
+      <DependentUpon>ProgrametShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Promo.resx">
+      <DependentUpon>Promo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PromoShow.resx">
+      <DependentUpon>PromoShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Puntoret.resx">
+      <DependentUpon>Puntoret.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PuntoretModule.resx">
+      <DependentUpon>PuntoretModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SherbimetModule.resx">
+      <DependentUpon>SherbimetModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentesAbonements .resx">
+      <DependentUpon>VentesAbonements .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentesAbonementsX30Show.resx">
+      <DependentUpon>VentesAbonementsX30Show.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentesAbonementX30.resx">
+      <DependentUpon>VentesAbonementX30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentesAbonShow.resx">
+      <DependentUpon>VentesAbonShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentureInterieus .resx">
+      <DependentUpon>VentureInterieus .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentureIShow.resx">
+      <DependentUpon>VentureIShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
